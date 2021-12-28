@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(204, 204, 204);
+}
+
+iframe {
+    width: 600px;
+    height: 700px;
+    box-shadow: black 10px 10px 10px;
+}

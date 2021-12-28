@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <iframe src="test.html" frameborder="0"></iframe>
+    <script>
+        // get all iframes that were parsed before this tag
+        var iframes = document.getElementsByTagName("iframe");
+
+        for (let i = 0; i < iframes.length; i++) {
+            var url = iframes[i].getAttribute("src");
+            // create div and replace iframe
+            let d = document.createElement('div');
+            d.classList.add("embedded-doc"); // optional
+            iframes[i].parentElement.replaceChild(d, iframes[i]);
+
+            // CORS request
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url, true);
+            xhr.onload = function() {
+                // display response
+                d.innerHTML = xhr.responseText;
+            };
+            xhr.send();
+
+        }
+    </script>
+</body>
+</html>
