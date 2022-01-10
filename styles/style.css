@@ -1,13 +1,88 @@
+@font-face {
+    font-family: 'AUTHENTICSans';
+    src: url('AUTHENTICSans-130.otf');
+}
+
 body {
+    font-family: 'AUTHENTICSans';
     background-color: rgb(204, 204, 204);
 }
+
+.container {
+    width: 100%;
+    font-family: 'AUTHENTICSans';
+    padding: 10vw;
+}
+
+.main h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.main h2 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.content {
+    display: flex;
+    margin-top: 40px;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.info {
+    width: 80%;
+    padding-right: 140px;
+}
+
+.links {
+    width: 50%;
+}
+
+.links ul {
+    margin-bottom: 30px;
+}
+
+.footer {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+/* iframe styles */
 
 iframe {
     width: 600px;
     height: 700px;
-    box-shadow: black 10px 10px 10px;
 }
 
 .embedded-doc > div {
     background-color: #ffffff00 !important;
+}
+
+.embedded-doc > div > p {
+    background-color: #ffffff00 !important;
+    font-family: 'AUTHENTICSans' !important;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.embedded-doc > div > p > span {
+    background-color: #ffffff00 !important;
+    font-family: 'AUTHENTICSans' !important;
+    font-size: 24px;
+    letter-spacing: 2px;
 }
