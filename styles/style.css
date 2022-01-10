@@ -33,7 +33,7 @@ body {
 }
 
 .info {
-    width: 80%;
+    width: 40%;
     padding-right: 140px;
 }
 
@@ -45,7 +45,8 @@ body {
     margin-bottom: 30px;
 }
 
-.footer {
+.footer li {
+    font-family: 'AUTHENTICSans';
     font-size: 24px;
     letter-spacing: 2px;
 }
@@ -55,11 +56,11 @@ li {
 }
 
 a {
-    color: black;
+    color: black !important;
 }
 
 a:hover {
-    color: blue;
+    color: blue !important;
 }
 
 /* iframe styles */
@@ -71,6 +72,7 @@ iframe {
 
 .embedded-doc > div {
     background-color: #ffffff00 !important;
+    padding: 0 !important;
 }
 
 .embedded-doc > div > p {
