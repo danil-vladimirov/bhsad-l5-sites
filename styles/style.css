@@ -9,7 +9,6 @@ body {
 }
 
 .container {
-    width: 100%;
     font-family: 'AUTHENTICSans';
     padding: 10vw;
 }
@@ -37,7 +36,7 @@ body {
 }
 
 .info {
-    width: 40%;
+    width: 70%;
     padding-right: 140px;
 }
 
@@ -100,6 +99,6 @@ a:hover {
     
     .links {
         width: 100%;
-        margin-top: 40px 0 40px 0;
+        margin: 40px 0 40px 0;
     }
 }
