@@ -69,14 +69,10 @@ a:hover {
 
 /* iframe styles */
 
-iframe {
-    width: 600px;
-    height: 700px;
-}
-
 .embedded-doc > div {
     background-color: #ffffff00 !important;
     padding: 0 !important;
+    margin: 0 !important;
 }
 
 .embedded-doc > div > p {
@@ -91,4 +87,19 @@ iframe {
     font-family: 'AUTHENTICSans' !important;
     font-size: 24px;
     letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 700px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+    }
+    
+    .links {
+        width: 100%;
+        margin-top: 40px 0 40px 0;
+    }
 }
